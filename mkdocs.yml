@@ -1,0 +1,97 @@
+site_name: Radiance Field Studio
+repo_url: https://github.com/PKU-VCL-Geometry/RadianceFieldStudio
+repo_name: RadianceFieldStudio
+theme:
+  name: material
+  features:
+    - content.tooltips
+    - content.code.copy
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.top
+    - navigation.tabs
+    - navigation.tracking
+    - navigation.sections
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: light blue
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+    annotation: material/lightbulb
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - abbr
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      use_pygments: true
+      pygments_lang_class: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+hooks:
+  - rfstudio/utils/docs/hook.py
+plugins:
+  - search
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+  - open-in-new-tab
+extra_css:
+  - extras.css
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/PKU-VCL-Geometry
+    - icon: material/web
+      link: https://vcl.pku.edu.cn/
+    - icon: fontawesome/solid/envelope
+      link: mailto:ye_kai@pku.edu.cn
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Quickstart: quickstart.md
+  - Tutorials:
+    - tutorials/index.md
+    - Training: tutorials/training.md
+    - Debug: tutorials/debug.md
+    - Visualization: tutorials/visualization.md
+    - Method: tutorials/method.md
+    - Data: tutorials/data.md
+    - Task: tutorials/task.md
+  - Reference:
+    - reference/index.md
+    - Anything: reference/anything.md
+  - Development:
+    - development/index.md
+    - Type Hints: development/type-hints.md
+    - Data Structure: development/data-structure.md
+    - Code Architecture: development/code-architecture.md
+    - Dataset Implementation: development/dataset-implementation.md
+    - Method Implementation: development/method-implementation.md

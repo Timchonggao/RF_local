@@ -1,0 +1,11 @@
+@media screen {
+  .js .md-typeset .tabbed-labels::before {
+    background-color: var(--md-accent-fg-color);
+  }
+}
+
+:root > * {
+  --md-code-hl-variable-color: var(--md-code-hl-keyword-color);
+  --md-code-hl-operator-color: var(--md-code-hl-special-color);
+  --md-code-font-family: Consolas, monospace;
+}

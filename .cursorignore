@@ -1,0 +1,12 @@
+rfstudio/assets/
+rfstudio/graphics/_mesh/_optix/c_src/
+rfstudio/graphics/_mesh/_optix/include/
+rfstudio/graphics/_mesh/_optix/tests/
+rfstudio/graphics/_mesh/_splitsum/c_src/
+rfstudio/loss/_chamfer/chamfer_distance.cpp
+rfstudio/loss/_chamfer/chamfer_distance.cu
+examples/
+docs/
+README.md
+LICENSE
+mkdocs.yml
